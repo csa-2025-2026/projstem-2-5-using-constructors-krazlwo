@@ -26,7 +26,7 @@ public class Main
     lengthwidth = scan.nextDouble();
 
     System.out.println("Give # for length");
-    length = scan.nextDouble();
+    length = scan.nextDouble();......................................................................
 
     System.out.println("Give width");
     width = scan.nextDouble();
@@ -36,5 +36,14 @@ public class Main
 
     System.out.println(rectangle1.toString());
     System.out.println(rectangle2.toString());
+
+      System.out.println("Problem 3\n");
+    double side;
+    System.out.println("Give a side length: ");
+    side = scan.nextDouble();
+    RegularPolygon regpoly1 = new RegularPolygon(side);
+    RegularPolygon regpoly2 = new RegularPolygon(4, side);
+
+    System.out.println(regpoly1.toString() + "\n" + regpoly2.toString());
   }
 }
